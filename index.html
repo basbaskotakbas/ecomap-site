@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EcoMap — Сортируй отходы правильно</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Подключение Leaflet для карты -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <header>
+    <h1>EcoMap</h1>
+    <nav>
+      <a href="#about">О проекте</a>
+      <a href="#map">Карта</a>
+      <a href="#education">Обучение</a>
+      <a href="#challenges">Награды</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Сортируй отходы — спасай планету!</h2>
+    <p>Находи ближайшие пункты переработки и участвуй в экологических челленджах вместе с EcoMap!</p>
+    <a href="#map" class="btn">Посмотреть карту</a>
+  </section>
+
+  <section id="about">
+    <h2>О проекте</h2>
+    <p>EcoMap помогает людям сортировать мусор, повышает экологическую осведомлённость и мотивирует через геймификацию и обучение.</p>
+  </section>
+
+  <section id="map">
+    <h2>Карта пунктов переработки</h2>
+
+    <div id="filter-buttons">
+      <button onclick="showAllMarkers()">Показать все</button>
+      <button onclick="filterMarkers('plastic')">Пластик</button>
+      <button onclick="filterMarkers('battery')">Батарейки</button>
+      <button onclick="filterMarkers('glass')">Стекло</button>
+    </div>
+
+    <div id="map-container"></div>
+  </section>
+
+  <section id="education">
+    <h2>Учись сортировать отходы</h2>
+    <ul>
+      <li>Какие отходы можно переработать</li>
+      <li>Как правильно очищать контейнеры</li>
+      <li>Почему переработка важна</li>
+    </ul>
+  </section>
+
+  <section id="challenges">
+    <h2>Экологические награды</h2>
+    <p>Участвуй в заданиях и зарабатывай медали за вклад в защиту природы!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 EcoMap. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
